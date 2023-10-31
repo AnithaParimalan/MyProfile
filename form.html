@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+ 
+    <style>
+ 
+       
+        body {
+            background-image: url('black.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+         
+        }
+        h1{
+            display: grid;
+            grid-column: 1/2;
+            grid-row: 4/5;
+            font-family: fantasy;
+            text-align: center;
+        }
+ 
+       
+        form {
+            background-color:#777;
+            background-image: linear-gradient(#777777);
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px yellow;
+            border-radius: 20px;
+            }
+ 
+       
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+      
+        .form-control label {
+            display: block;
+            margin-bottom: 5px;
+            border-radius: 20px;
+        }
+ 
+        
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 5px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 70%;
+        }
+        .form-control input:hover{
+            box-shadow: 2px 5px 10px yellow;
+            
+
+        }
+ 
+ 
+ .form-control input[type="radio"],
+ .form-control input[type="checkbox"] {
+     display:inline-block;
+     width: auto;
+ }
+
+ 
+ button {
+     background-color: #05c46b;
+     border: 1px solid #777;
+     border-radius: 20px;
+     font-family: inherit;
+     font-size: 21px;
+     display: block;
+     width: 100%;
+     margin-top: 10px;
+     margin-bottom: 20px;
+ }
+</style>
+</head>
+
+<body>
+<h1 style="color: antiquewhite;">STUDENT SURVEY</h1>
+ 
+ <form id="form" align="left">
+ 
+    
+    <div class="form-control">
+        <label for="name" id="label-name">
+            Name
+        </label>
+
+       
+        <input type="text"
+               id="name"
+               placeholder="Enter your name" />
+    </div>
+
+    <div class="form-control">
+        <label for="email" id="label-email">
+            Email
+        </label>
+
+      
+        <input type="email"
+               id="email"
+               placeholder="Enter your email" />
+    </div>
+
+    <div class="form-control">
+        <label for="age" id="label-age">
+            Age
+        </label>
+
+       
+        <input type="text"
+               id="age"
+               placeholder="Enter your age" />
+    </div>
+
+    <div class="form-control">
+        <label for="role" id="label-role">
+            Which option best describes you?
+        </label>
+         
+        
+        <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">
+                Professional
+            </option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+
+    <div class="form-control">
+        <label>Languages and Frameworks known
+            <small>(Check all that apply)</small>
+        </label>
+        
+        <label for="inp-1">
+            <input type="checkbox"
+                   name="inp">C</input></label>
+        <label for="inp-2">
+            <input type="checkbox"
+                   name="inp">C++</input></label>
+        <label for="inp-4">
+            <input type="checkbox"
+                   name="inp">Java</input></label>
+        <label for="inp-5">
+            <input type="checkbox"
+                   name="inp">Python</input></label>
+        <label for="inp-6">
+            <input type="checkbox"
+                   name="inp">JavaScript</input></label>
+        <label for="inp-7">
+            <input type="checkbox"
+                   name="inp">React</input></label>
+    </div>
+
+   <div class="form-control">
+        <label for="comment">
+            Any comments or suggestions
+        </label>
+
+        
+        <textarea name="comment" id="comment"
+            placeholder="Enter your comment here">
+        </textarea>
+    </div>
+
+    
+    <button type="submit" value="submit">
+        Submit
+    </button>
+</form>
+</body>
+</html>

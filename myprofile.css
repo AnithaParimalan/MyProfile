@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+/*body {
+  font-family:Arial,sans-serif;
+  line-height: 1.25rem;
+  font-size: .900rem;
+  letter-spacing: .0142857143em;
+  font-weight:400;
+  color: rgb(60,64,67);
+}*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.25rem;
+}
+header {
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative; 
+}
+h1{
+  font-size: 2.5rem;
+}
+h3{
+  color:violet;
+}
+.profile{
+  width: 100px; 
+  height: 100px;
+  border-radius: 75%; 
+  object-fit: cover; 
+  position: absolute; 
+  top: 55px; 
+  left: 75px;
+  box-shadow: 10px 10px 8px #888888;
+}
+date{
+  margin: 0px;
+  padding: 0px;
+}
+.time{
+  color:white;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, indigo, violet);
+}
+.time:hover{
+  background-color: yellow;
+}
+nav {
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  color: #fff;
+  text-align: center;  
+}
+nav{
+  display: block;
+}
+
+nav ul {
+  list-style-type:none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.profileimage{
+  width: 70px;
+  height: 70px;
+  border-radius: 55%;
+  object-fit: cover;
+  box-shadow: 10px 10px 8px #888888;
+}
+#section{
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  }
+  #about{
+    padding:0rem;
+    margin: 0 2px;
+
+  }
+  #contact{
+    top:1000px;
+    position: relative;
+  }
+
+.fa {
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+ footer{
+  clear:both;
+  margin: 0 0px;
+  padding:10px;
+  padding-top: 20px;
+  float: center;
+  height: 100px;
+  background-color:black;
+  text-align: center;
+  font-size: 20px;
+ }
+ #scroll{
+  float:right;
+  padding-right: 10px;
+  position: relative;
+  height: 40px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right,green,yellow);
+ }
+ .button{
+  background-image: linear-gradient(to right,green,yellow);
+  float:right;
+  height: 30px;
+  border-radius: 5px;
+ }
+ 
